@@ -1,0 +1,12 @@
+/* @import "https://code.highcharts.com/css/highcharts.css"; */
+
+#container {
+	min-width: 95vw;
+	max-width: 95vw;
+	margin: 0 auto;
+}
+body{
+    background: rgb(45, 45, 54) !important;
+    font-family: 'Poppins' !important;
+    font-size: 3em;
+}
