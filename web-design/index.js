@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
   // define colors
   const bgGrey = "rgb(45, 45, 54)"
-  const grey = "rgb(72, 72, 72)"
+  const grey = "#494949"
   const filmmaking = "#E00E7A"
   const acting = "#EC6608"
   const threed = "#BB66A5"
@@ -41,8 +41,8 @@ document.addEventListener("DOMContentLoaded", function () {
           color: "#ffffff",
           style: {
             textOutline: "none",
-            fontFamily: "Poppins",
-            fontSize: "16px",
+            fontFamily: "Encode Sans Semi Expanded",
+            fontSize: "12px",
             fontWeight: "400",
           },
         },
@@ -64,25 +64,27 @@ document.addEventListener("DOMContentLoaded", function () {
       {
         link: {
           width: 2, // spessore lineetta
-          color: "#ffffff",
+          color: grey,
         },
         dataLabels: {
           enabled: false, // testa sulla linea
         },
+        marker: {
+          fillColor: bgGrey,
+          lineWidth: 2,
+        },
 
         nodes: [
-          // definizione dei pallini
-
           // corsi
           {
             id: "Web Design",
-            key: "web",
+            key: "web-design",
             dataLabels: {
               enabled: true,
             },
             marker: {
-              radius: 40,
-              fillColor: web,
+              radius: 80,
+              lineColor: web,
             },
           },
 
@@ -93,8 +95,8 @@ document.addEventListener("DOMContentLoaded", function () {
               enabled: true,
             },
             marker: {
-              radius: 20,
-              fillColor: web,
+              radius: 40,
+              lineColor: web,
             },
           },
           {
@@ -104,8 +106,8 @@ document.addEventListener("DOMContentLoaded", function () {
               enabled: true,
             },
             marker: {
-              radius: 20,
-              fillColor: web,
+              radius: 40,
+              lineColor: web,
             },
           },
           {
@@ -115,8 +117,8 @@ document.addEventListener("DOMContentLoaded", function () {
               enabled: true,
             },
             marker: {
-              radius: 20,
-              fillColor: web,
+              radius: 40,
+              lineColor: web,
             },
           },
           {
@@ -126,8 +128,8 @@ document.addEventListener("DOMContentLoaded", function () {
               enabled: true,
             },
             marker: {
-              radius: 20,
-              fillColor: web,
+              radius: 40,
+              lineColor: web,
             },
           },
           {
@@ -137,8 +139,8 @@ document.addEventListener("DOMContentLoaded", function () {
               enabled: true,
             },
             marker: {
-              radius: 20,
-              fillColor: web,
+              radius: 40,
+              lineColor: web,
             },
           },
           {
@@ -148,8 +150,8 @@ document.addEventListener("DOMContentLoaded", function () {
               enabled: true,
             },
             marker: {
-              radius: 20,
-              fillColor: web,
+              radius: 40,
+              lineColor: web,
             },
           },
 
@@ -160,8 +162,9 @@ document.addEventListener("DOMContentLoaded", function () {
               enabled: true,
             },
             marker: {
-              radius: 10,
+              radius: 20,
               fillColor: web,
+              lineColor: "transparent",
             },
           },
           {
@@ -171,8 +174,9 @@ document.addEventListener("DOMContentLoaded", function () {
               enabled: true,
             },
             marker: {
-              radius: 10,
+              radius: 20,
               fillColor: web,
+              lineColor: "transparent",
             },
           },
           {
@@ -182,12 +186,14 @@ document.addEventListener("DOMContentLoaded", function () {
               enabled: true,
             },
             marker: {
-              radius: 10,
+              radius: 20,
               fillColor: web,
+              lineColor: "transparent",
             },
           },
         ],
         data: [
+          // definizione dei collegamenti (genitori, figli)
           ["Web Design", "Niccolò Maffioli"],
           ["Web Design", "Carolina Cristino"],
           ["Web Design", "Isabella Bagnulo"],

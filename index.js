@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
   // define colors
   const bgGrey = "rgb(45, 45, 54)"
-  const grey = "rgb(72, 72, 72)"
+  const grey = "#494949"
   const filmmaking = "#E00E7A"
   const acting = "#EC6608"
   const threed = "#BB66A5"
@@ -12,6 +12,8 @@ document.addEventListener("DOMContentLoaded", function () {
   const storytelling = "#31B7BC"
   const sound = "#951B81"
   const videogame = "#D20A11"
+  const gradient =
+    "linear-gradient(270deg, #ffb500 0, #ffa41e 8.33%, #ff9234 16.67%, #ff7d42 25%, #ff674d 33.33%, #ff5055 41.67%, #ff3858 50%, #e41f59 58.33%, #cc025b 66.67%, #b6005d 75%, #a3005f 83.33%, #910063 91.67%, #820067 100%);"
 
   //opzioni
   // Highcharts.setOptions({
@@ -41,8 +43,8 @@ document.addEventListener("DOMContentLoaded", function () {
           color: "#ffffff",
           style: {
             textOutline: "none",
-            fontFamily: "Poppins",
-            fontSize: "16px",
+            fontFamily: "Encode Sans Semi Expanded",
+            fontSize: "12px",
             fontWeight: "400",
           },
         },
@@ -64,10 +66,14 @@ document.addEventListener("DOMContentLoaded", function () {
       {
         link: {
           width: 2, // spessore lineetta
-          color: "#ffffff",
+          color: grey,
         },
         dataLabels: {
           enabled: false, // testa sulla linea
+        },
+        marker: {
+          fillColor: bgGrey,
+          lineWidth: 2,
         },
 
         nodes: [
@@ -77,6 +83,9 @@ document.addEventListener("DOMContentLoaded", function () {
             key: "", // continuazione dell url
             dataLabels: {
               enabled: true, // abilita testo dentro la pallina
+              style: {
+                fontSize: "16px",
+              },
             },
             // color: {
             //   pattern: {
@@ -85,8 +94,22 @@ document.addEventListener("DOMContentLoaded", function () {
             // },
             marker: {
               // opzioni estetiche per pallina
+              lineColor: {
+                linearGradient: { x1: 0, x2: 0, y1: 0, y2: 1 },
+                stops: [
+                  [0, web],
+                  [1, graphic],
+                  [2, filmmaking],
+                  [3, acting],
+                  [4, threed],
+                  [5, comic],
+                  [6, photography],
+                  [7, storytelling],
+                  [8, videogame],
+                  [9, sound],
+                ],
+              },
               radius: 80,
-              fillColor: grey,
               // lineColor: "#ffffff",
             },
           },
@@ -100,7 +123,7 @@ document.addEventListener("DOMContentLoaded", function () {
             },
             marker: {
               radius: 40,
-              fillColor: web,
+              lineColor: web,
             },
           },
           {
@@ -111,7 +134,7 @@ document.addEventListener("DOMContentLoaded", function () {
             },
             marker: {
               radius: 40,
-              fillColor: graphic,
+              lineColor: graphic,
             },
           },
           {
@@ -122,7 +145,7 @@ document.addEventListener("DOMContentLoaded", function () {
             },
             marker: {
               radius: 40,
-              fillColor: comic,
+              lineColor: comic,
             },
           },
           {
@@ -133,7 +156,7 @@ document.addEventListener("DOMContentLoaded", function () {
             },
             marker: {
               radius: 40,
-              fillColor: filmmaking,
+              lineColor: filmmaking,
             },
           },
           {
@@ -144,7 +167,7 @@ document.addEventListener("DOMContentLoaded", function () {
             },
             marker: {
               radius: 40,
-              fillColor: acting,
+              lineColor: acting,
             },
           },
           {
@@ -155,7 +178,7 @@ document.addEventListener("DOMContentLoaded", function () {
             },
             marker: {
               radius: 40,
-              fillColor: threed,
+              lineColor: threed,
             },
           },
           {
@@ -166,7 +189,7 @@ document.addEventListener("DOMContentLoaded", function () {
             },
             marker: {
               radius: 40,
-              fillColor: photography,
+              lineColor: photography,
             },
           },
           {
@@ -177,7 +200,7 @@ document.addEventListener("DOMContentLoaded", function () {
             },
             marker: {
               radius: 40,
-              fillColor: storytelling,
+              lineColor: storytelling,
             },
           },
           {
@@ -188,7 +211,7 @@ document.addEventListener("DOMContentLoaded", function () {
             },
             marker: {
               radius: 40,
-              fillColor: sound,
+              lineColor: sound,
             },
           },
           {
@@ -199,7 +222,7 @@ document.addEventListener("DOMContentLoaded", function () {
             },
             marker: {
               radius: 40,
-              fillColor: videogame,
+              lineColor: videogame,
             },
           },
 
@@ -211,7 +234,7 @@ document.addEventListener("DOMContentLoaded", function () {
             },
             marker: {
               radius: 20,
-              fillColor: web,
+              lineColor: web,
             },
           },
           {
@@ -222,7 +245,7 @@ document.addEventListener("DOMContentLoaded", function () {
             },
             marker: {
               radius: 20,
-              fillColor: web,
+              lineColor: web,
             },
           },
           {
@@ -233,7 +256,7 @@ document.addEventListener("DOMContentLoaded", function () {
             },
             marker: {
               radius: 20,
-              fillColor: web,
+              lineColor: web,
             },
           },
           {
@@ -244,7 +267,7 @@ document.addEventListener("DOMContentLoaded", function () {
             },
             marker: {
               radius: 20,
-              fillColor: web,
+              lineColor: web,
             },
           },
           {
@@ -255,7 +278,7 @@ document.addEventListener("DOMContentLoaded", function () {
             },
             marker: {
               radius: 20,
-              fillColor: web,
+              lineColor: web,
             },
           },
           {
@@ -266,7 +289,7 @@ document.addEventListener("DOMContentLoaded", function () {
             },
             marker: {
               radius: 20,
-              fillColor: web,
+              lineColor: web,
             },
           },
 
@@ -278,7 +301,7 @@ document.addEventListener("DOMContentLoaded", function () {
             },
             marker: {
               radius: 20,
-              fillColor: graphic,
+              lineColor: graphic,
             },
           },
           {
@@ -289,7 +312,7 @@ document.addEventListener("DOMContentLoaded", function () {
             },
             marker: {
               radius: 20,
-              fillColor: graphic,
+              lineColor: graphic,
             },
           },
           {
@@ -300,7 +323,7 @@ document.addEventListener("DOMContentLoaded", function () {
             },
             marker: {
               radius: 20,
-              fillColor: graphic,
+              lineColor: graphic,
             },
           },
           {
@@ -311,7 +334,7 @@ document.addEventListener("DOMContentLoaded", function () {
             },
             marker: {
               radius: 20,
-              fillColor: graphic,
+              lineColor: graphic,
             },
           },
 
@@ -323,7 +346,7 @@ document.addEventListener("DOMContentLoaded", function () {
             },
             marker: {
               radius: 20,
-              fillColor: filmmaking,
+              lineColor: filmmaking,
             },
           },
           {
@@ -334,7 +357,7 @@ document.addEventListener("DOMContentLoaded", function () {
             },
             marker: {
               radius: 20,
-              fillColor: filmmaking,
+              lineColor: filmmaking,
             },
           },
           {
@@ -345,7 +368,7 @@ document.addEventListener("DOMContentLoaded", function () {
             },
             marker: {
               radius: 20,
-              fillColor: filmmaking,
+              lineColor: filmmaking,
             },
           },
 
@@ -357,7 +380,7 @@ document.addEventListener("DOMContentLoaded", function () {
             },
             marker: {
               radius: 20,
-              fillColor: photography,
+              lineColor: photography,
             },
           },
           {
@@ -368,7 +391,7 @@ document.addEventListener("DOMContentLoaded", function () {
             },
             marker: {
               radius: 20,
-              fillColor: photography,
+              lineColor: photography,
             },
           },
           {
@@ -379,7 +402,7 @@ document.addEventListener("DOMContentLoaded", function () {
             },
             marker: {
               radius: 20,
-              fillColor: photography,
+              lineColor: photography,
             },
           },
 
@@ -391,7 +414,7 @@ document.addEventListener("DOMContentLoaded", function () {
             },
             marker: {
               radius: 20,
-              fillColor: acting,
+              lineColor: acting,
             },
           },
           {
@@ -402,7 +425,7 @@ document.addEventListener("DOMContentLoaded", function () {
             },
             marker: {
               radius: 20,
-              fillColor: acting,
+              lineColor: acting,
             },
           },
           {
@@ -413,7 +436,7 @@ document.addEventListener("DOMContentLoaded", function () {
             },
             marker: {
               radius: 20,
-              fillColor: acting,
+              lineColor: acting,
             },
           },
 
@@ -425,7 +448,7 @@ document.addEventListener("DOMContentLoaded", function () {
             },
             marker: {
               radius: 20,
-              fillColor: videogame,
+              lineColor: videogame,
             },
           },
           {
@@ -436,7 +459,7 @@ document.addEventListener("DOMContentLoaded", function () {
             },
             marker: {
               radius: 20,
-              fillColor: videogame,
+              lineColor: videogame,
             },
           },
           {
@@ -447,7 +470,7 @@ document.addEventListener("DOMContentLoaded", function () {
             },
             marker: {
               radius: 20,
-              fillColor: videogame,
+              lineColor: videogame,
             },
           },
 
@@ -459,7 +482,7 @@ document.addEventListener("DOMContentLoaded", function () {
             },
             marker: {
               radius: 20,
-              fillColor: threed,
+              lineColor: threed,
             },
           },
           {
@@ -470,7 +493,7 @@ document.addEventListener("DOMContentLoaded", function () {
             },
             marker: {
               radius: 20,
-              fillColor: threed,
+              lineColor: threed,
             },
           },
           {
@@ -481,7 +504,7 @@ document.addEventListener("DOMContentLoaded", function () {
             },
             marker: {
               radius: 20,
-              fillColor: threed,
+              lineColor: threed,
             },
           },
 
@@ -493,7 +516,7 @@ document.addEventListener("DOMContentLoaded", function () {
             },
             marker: {
               radius: 20,
-              fillColor: comic,
+              lineColor: comic,
             },
           },
           {
@@ -504,7 +527,7 @@ document.addEventListener("DOMContentLoaded", function () {
             },
             marker: {
               radius: 20,
-              fillColor: comic,
+              lineColor: comic,
             },
           },
           {
@@ -515,7 +538,7 @@ document.addEventListener("DOMContentLoaded", function () {
             },
             marker: {
               radius: 20,
-              fillColor: comic,
+              lineColor: comic,
             },
           },
 
@@ -527,7 +550,7 @@ document.addEventListener("DOMContentLoaded", function () {
             },
             marker: {
               radius: 20,
-              fillColor: storytelling,
+              lineColor: storytelling,
             },
           },
           {
@@ -538,7 +561,7 @@ document.addEventListener("DOMContentLoaded", function () {
             },
             marker: {
               radius: 20,
-              fillColor: storytelling,
+              lineColor: storytelling,
             },
           },
           {
@@ -549,7 +572,7 @@ document.addEventListener("DOMContentLoaded", function () {
             },
             marker: {
               radius: 20,
-              fillColor: storytelling,
+              lineColor: storytelling,
             },
           },
 
@@ -561,7 +584,7 @@ document.addEventListener("DOMContentLoaded", function () {
             },
             marker: {
               radius: 20,
-              fillColor: sound,
+              lineColor: sound,
             },
           },
           {
@@ -572,7 +595,7 @@ document.addEventListener("DOMContentLoaded", function () {
             },
             marker: {
               radius: 20,
-              fillColor: sound,
+              lineColor: sound,
             },
           },
           {
@@ -583,7 +606,7 @@ document.addEventListener("DOMContentLoaded", function () {
             },
             marker: {
               radius: 20,
-              fillColor: sound,
+              lineColor: sound,
             },
           },
 
@@ -596,6 +619,7 @@ document.addEventListener("DOMContentLoaded", function () {
             marker: {
               radius: 10,
               fillColor: web,
+              lineColor: "transparent",
             },
           },
           {
@@ -607,6 +631,7 @@ document.addEventListener("DOMContentLoaded", function () {
             marker: {
               radius: 10,
               fillColor: web,
+              lineColor: "transparent",
             },
           },
           {
@@ -618,6 +643,7 @@ document.addEventListener("DOMContentLoaded", function () {
             marker: {
               radius: 10,
               fillColor: web,
+              lineColor: "transparent",
             },
           },
         ],
