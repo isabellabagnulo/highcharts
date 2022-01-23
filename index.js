@@ -118,7 +118,7 @@ document.addEventListener("DOMContentLoaded", function () {
           // corsi
           {
             id: "Web Design",
-            key: "web-design.html",
+            key: "web-design/index.html",
             dataLabels: {
               enabled: true,
             },
