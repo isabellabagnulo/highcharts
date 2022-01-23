@@ -123,7 +123,7 @@ document.addEventListener("DOMContentLoaded", function () {
           },
           {
             id: "Web2A",
-            key: "web-design/web2a/index.html",
+            key: "highcharts/web-design/web2a/index.html",
             dataLabels: {
               enabled: true,
             },
