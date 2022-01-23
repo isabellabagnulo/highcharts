@@ -13,15 +13,6 @@ document.addEventListener("DOMContentLoaded", function () {
   const sound = "#951B81"
   const videogame = "#D20A11"
 
-  //opzioni
-  // Highcharts.setOptions({
-  //   chart: {
-  //     style: {
-
-  //     },
-  //   },
-  // })
-
   // nuovo chart
   const chart = Highcharts.chart("container", {
     chart: {
@@ -77,8 +68,8 @@ document.addEventListener("DOMContentLoaded", function () {
         nodes: [
           // corsi
           {
-            id: "Web Design",
-            key: "web-design",
+            id: "Web2A",
+            key: "web-design/web2a",
             dataLabels: {
               enabled: true,
             },
@@ -89,8 +80,8 @@ document.addEventListener("DOMContentLoaded", function () {
           },
 
           {
-            id: "Web1A",
-            key: "web-design/web1a",
+            id: "Niccolò Maffioli",
+            key: "web-design/web2a/niccolo-maffioli",
             dataLabels: {
               enabled: true,
             },
@@ -100,8 +91,8 @@ document.addEventListener("DOMContentLoaded", function () {
             },
           },
           {
-            id: "Web1B",
-            key: "web-design/web1b",
+            id: "Carolina Cristino",
+            key: "web-design/web2a/carolina-cristino",
             dataLabels: {
               enabled: true,
             },
@@ -111,8 +102,8 @@ document.addEventListener("DOMContentLoaded", function () {
             },
           },
           {
-            id: "Web1C",
-            key: "web-design/web1c",
+            id: "Isabella Bagnulo",
+            key: "web-design/web2a/isabella-bagnulo",
             dataLabels: {
               enabled: true,
             },
@@ -122,8 +113,8 @@ document.addEventListener("DOMContentLoaded", function () {
             },
           },
           {
-            id: "Web2A",
-            key: "web-design/web2a",
+            id: "Giovanna Monti",
+            key: "web-design/web2a/giovanna-monti",
             dataLabels: {
               enabled: true,
             },
@@ -133,8 +124,8 @@ document.addEventListener("DOMContentLoaded", function () {
             },
           },
           {
-            id: "Web2B",
-            key: "web-design/web2b",
+            id: "Victoria Ferrari",
+            key: "web-design/web2a/victoria-ferrari",
             dataLabels: {
               enabled: true,
             },
@@ -144,8 +135,8 @@ document.addEventListener("DOMContentLoaded", function () {
             },
           },
           {
-            id: "Web2C",
-            key: "web-design/web2c",
+            id: "Luca Ricci",
+            key: "web-design/web2a/luca-ricci",
             dataLabels: {
               enabled: true,
             },
@@ -157,12 +148,12 @@ document.addEventListener("DOMContentLoaded", function () {
         ],
         data: [
           // definizione dei collegamenti (genitori, figli)
-          ["Web Design", "Web1A"],
-          ["Web Design", "Web1B"],
-          ["Web Design", "Web1C"],
-          ["Web Design", "Web2A"],
-          ["Web Design", "Web2B"],
-          ["Web Design", "Web2C"],
+          ["Web2A", "Niccolò Maffioli"],
+          ["Web2A", "Carolina Cristino"],
+          ["Web2A", "Isabella Bagnulo"],
+          ["Web2A", "Giovanna Monti"],
+          ["Web2A", "Victoria Ferrari"],
+          ["Web2A", "Luca Ricci"],
         ],
       },
     ],
