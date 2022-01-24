@@ -19,11 +19,29 @@
     <main>
         <nav>
             <a href="index.html"><div class="logo"><img src="logo.png" alt="logo Mohole's"></div></a>
-            <ul>
-                <li><a href="#">ABOUT</a></li>
-                <li><a href="#">CORSI</a></li>
-                <li><a href="#">EVENTI</a></li>
-                <li><a href="#">LOGOUT</a></li>
+            <div class="burger-menu">
+                <button class="open">MENU</button>
+                <button class="close">CLOSE</button>
+            </div>
+            <div class="menu">
+                <div class="inner-burger">
+                    <a href="index.html"><div class="logo"><img src="logo.png" alt="logo Mohole's"></div></a>
+                    <div class="random">
+                        <a href="all.html"><p>RANDOM</p></a>
+                    </div>
+                </div>
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Corsi</a></li>
+                    <li><a href="#">Eventi</a></li>
+                    <li><a href="#">Logout</a></li>
+                </ul>
+            </div>
+            <ul class="menu-desktop">
+                <li><a href="#">About</a></li>
+                <li><a href="#">Corsi</a></li>
+                <li><a href="#">Eventi</a></li>
+                <li><a href="#">Logout</a></li>
             </ul>
             <div class="random">
                 <a href="all.html"><p>RANDOM</p></a>
@@ -33,7 +51,8 @@
         <div id="container"></div>
     </main>
 
-    <script type="module" src="./index.js"></script>
+    <script type="text/javascript" src="./index.js"></script>
+    <script type="text/javascript" src="./burger.js"></script>
 
 </body>
 </html>
