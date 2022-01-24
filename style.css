@@ -122,6 +122,7 @@ li{
 	z-index: 100;
 	top: 40px;
 	left: 48%;
+	opacity: 0;
 }
 .burger-menu .open, .close{
 	cursor: pointer;
@@ -168,6 +169,9 @@ li{
 		width: 15%;
 		height: 100vh;
 		flex-direction: column;
+	}
+	.burger-menu{
+		opacity: 1;
 	}
 	.menu-desktop{
 		display: block;
