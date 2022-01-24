@@ -22,11 +22,12 @@ img{
 
 main{
 	display: flex;
+	flex-direction: column;
 }
 
 
 #container {
-	min-width: 85%;
+	min-width: 100%;
 	margin: 0 auto;
 }
 body{
@@ -40,16 +41,21 @@ a{
 
 nav{
 	padding: 50px 30px;
-	height: 100vh;
-	width: 10%;
+	height: 60px;
+	width: 100%;
 	display: flex;
-	flex-direction: column;
 	justify-content: space-between;
 	align-items: center;
 	background-color: #3B3B45;
 }
+ul{
+	display: none;
+}
 li{
 	padding: 5px 0;
+}
+.logo{
+	width: 100px;
 }
 .circle{
 	background: white;
@@ -108,5 +114,23 @@ li{
 	}
 	100%{
 		background: #BB66A5;
+	}
+}
+
+
+@media (min-width: 1000px) {
+	main{
+		flex-direction: row;
+	}
+	nav{
+		width: 15%;
+		height: 100vh;
+		flex-direction: column;
+	}
+	ul{
+		display: block;
+	}
+	#container{
+		max-width: 85%;
 	}
 }
